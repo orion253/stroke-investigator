@@ -8,4 +8,8 @@ public class Examination {
     public Examination(LocalDate date) {
         this.date = date;
     }
+
+    public String getDate() {
+        return date.toString();
+    }
 }

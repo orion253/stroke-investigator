@@ -1,7 +1,5 @@
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
+import java.awt.event.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +17,8 @@ public class Main {
             }
         });
 
+        // existing patients
+        Patient pat1 = new Patient("Daphne von Oram", 62);
+        Patient pat2 = new Patient("Sebastian Compton", 31);
     }
 }
