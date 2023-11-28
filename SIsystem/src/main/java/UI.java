@@ -9,8 +9,10 @@ public class UI {
         frame.setSize(1200,1000);
         frame.getContentPane().add(new patientProfiles());
         frame.setVisible(true);
-        // This next line closes the program when the frame is closed
-        frame.addWindowListener(new WindowAdapter() {	// Closes the program if close window clicked
+
+
+        // Closes the program when the frame is closed
+        frame.addWindowListener(new WindowAdapter() {	// Close the program if close window clicked
             public void windowClosing(WindowEvent e) {
                 frame.dispose();
             }
