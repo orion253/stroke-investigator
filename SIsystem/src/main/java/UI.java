@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
+import java.net.URL;
 
 public class UI {
     static GraphicsConfiguration gc;	// Contains this computer’s graphics configuration
@@ -17,7 +18,16 @@ public class UI {
                 frame.dispose();
             }
         });
+        /*
+        // Try displaying images
+        JLabel profilePic = new JLabel();
+        URL imageURL = null;
+        try {
+            imageURL = new URL();
+        }
 
+
+
+         */
     }
-
 }

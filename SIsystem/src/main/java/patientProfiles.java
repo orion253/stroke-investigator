@@ -25,8 +25,6 @@ public class patientProfiles extends JPanel {
 
     public patientProfiles() {
         setLayout(new GridLayout(2, 4));
-        //c1.setSize(500, 500);
-        //add(c1);
 
         this.profile1 = new JButton(pat1.PatientDetails());
         this.profile2 = new JButton(pat2.PatientDetails());
@@ -51,8 +49,6 @@ public class patientProfiles extends JPanel {
         });
     }
 
-
-    //methods
 
 }
 
