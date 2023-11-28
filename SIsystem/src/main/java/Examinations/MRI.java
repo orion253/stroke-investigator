@@ -25,6 +25,6 @@ public class MRI extends Examination {
 
     //methods
     public static String getDetailsText(){
-        return "Examination was done on "+date.toString();
+        return "MRI was done on "+date.toString();
     }
 }

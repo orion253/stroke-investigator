@@ -21,5 +21,8 @@ public class BP extends Examination {
 
 
     // methods
+    public static String getDetailsText(){
+        return "BP exam was done on "+date.toString();
+    }
 
 }
