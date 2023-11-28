@@ -22,10 +22,8 @@ public class Patient{
         return age;
     }
 
-    //2. adding an examination
 
-
-    //3. displaying a patient's details
+    //2. displaying a patient's details on buttons before clicking
     public String PatientDetails(){
         String details = new String("<html>");
         details+="Patient: "+name+"<br>";

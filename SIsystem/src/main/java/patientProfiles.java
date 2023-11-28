@@ -17,7 +17,6 @@ public class patientProfiles extends JPanel {
 
     JButton profile1;
     JButton profile2;
-    //Canvas c1 = new Canvas();
 
     //constructor
 
@@ -26,8 +25,8 @@ public class patientProfiles extends JPanel {
         //c1.setSize(500, 500);
         //add(c1);
 
-        this.profile1 = new JButton(pat1.getName());
-        this.profile2 = new JButton(pat2.getName());
+        this.profile1 = new JButton(pat1.PatientDetails());
+        this.profile2 = new JButton(pat2.PatientDetails());
         add(profile1);
         add(profile2);
         profile1.addActionListener(new ActionListener() {
@@ -40,7 +39,7 @@ public class patientProfiles extends JPanel {
         profile2.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 // when profile is clicked, their details should be printed on console
-                System.out.println("Patient: "+pat2.getName()+": MRI:");
+                System.out.println("Patient: "+pat2.getName()+": MRI: "+ mri2.getFieldStrength()+", "+mri2.getDate());
 
             }
         });
