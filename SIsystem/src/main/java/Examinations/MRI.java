@@ -10,6 +10,7 @@ public class MRI extends Examination {
     private URL url;
     private String Surl; // url String
     private String fieldStrength;
+    LocalDate date1;
 
 
     //constructor
@@ -23,4 +24,7 @@ public class MRI extends Examination {
 
 
     //methods
+    public static String getDetailsText(){
+        return "Examination was done on "+date.toString();
+    }
 }
