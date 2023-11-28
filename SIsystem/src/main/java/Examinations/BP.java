@@ -25,4 +25,21 @@ public class BP extends Examination {
         return "BP exam was done on "+date.toString();
     }
 
+    // getters
+    public String getDiastolic() {
+        return diastolic;
+    }
+
+    public String getSystolic() {
+        return systolic;
+    }
+
+    public String getDuration() {
+        return duration;
+    }
+
+    @Override
+    public String getDate() {
+        return super.getDate();
+    }
 }
