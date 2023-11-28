@@ -1,12 +1,11 @@
-import Examinations.Examination;
-
-import java.util.ArrayList;
+import Examinations.*;
 
 public class Patient{
     //fields
     private String name;
     private int age;
-    private ArrayList<Examination> examinations = new ArrayList<>();
+    private MRI mri;
+    private BP bp;
 
     //constructor
     public Patient(String name, int age) {
@@ -24,18 +23,15 @@ public class Patient{
     }
 
     //2. adding an examination
-    public void addExamination(Examination examination){
-        examinations.add(examination);
-    }
+
 
     //3. displaying a patient's details
     public String PatientDetails(){
         String details = new String("<html>");
         details+="Patient: "+name+"<br>";
-        details+= Examination.getDisplayText();
+        details+="Age: "+age;
 
-
-        return details;
+        return details+"<br></html>";
     }
 
     /*

@@ -13,7 +13,11 @@ public class Examination {
         return date.toString();
     }
 
-    public static String getDisplayText(){
-        return "Initial appointment on "+date.toString();
+    public static String getExamDate(){
+        return date.toString();
+    }
+
+
+    public void addExam(){ //not sure if I will keep  abstract method, depending on how I'll add patient exams
     }
 }
